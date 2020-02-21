@@ -40,6 +40,8 @@ function check_options()
          fi
          ;;
    esac
+	echo "Now the Player Position is : $pos"
+   echo "...................................................................................................................................."
 }
 
 
@@ -48,3 +50,5 @@ do
    roll
    check_options
 done
+
+echo "The number of times the dice was played to win game is : $totalrandomCheck"
