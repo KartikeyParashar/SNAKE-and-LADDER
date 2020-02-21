@@ -26,6 +26,10 @@ function check_options()
          ;;
    $LADDER)
 			pos=$(( $pos + $randomCheck ))
+			 if [ $pos -gt $WIN_POS ]
+         then
+            pos=$(( $pos - $randomCheck ))
+         fi
          ;;
    $SNAKE)
          echo "Snake"
